@@ -17,10 +17,9 @@ struct ContentView: View {
         }
         .padding()
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+	
+	
+	// goal is stored in the water array
+	// as is the amount of water you got for each day
+	// consider using the xno thing for uniquing days
 }

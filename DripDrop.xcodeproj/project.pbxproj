@@ -11,6 +11,7 @@
 		1E2A99BD294BB05D0006FA3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2A99BC294BB05D0006FA3B /* ContentView.swift */; };
 		1E2A99BF294BB05E0006FA3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2A99BE294BB05E0006FA3B /* Assets.xcassets */; };
 		1E2A99C3294BB05E0006FA3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2A99C2294BB05E0006FA3B /* Preview Assets.xcassets */; };
+		1E2A99CA294BB0940006FA3B /* StorageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2A99C9294BB0940006FA3B /* StorageHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		1E2A99BE294BB05E0006FA3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E2A99C0294BB05E0006FA3B /* DripDrop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DripDrop.entitlements; sourceTree = "<group>"; };
 		1E2A99C2294BB05E0006FA3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E2A99C9294BB0940006FA3B /* StorageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				1E2A99BA294BB05D0006FA3B /* DripDropApp.swift */,
 				1E2A99BC294BB05D0006FA3B /* ContentView.swift */,
+				1E2A99C9294BB0940006FA3B /* StorageHelper.swift */,
 				1E2A99BE294BB05E0006FA3B /* Assets.xcassets */,
 				1E2A99C0294BB05E0006FA3B /* DripDrop.entitlements */,
 				1E2A99C1294BB05E0006FA3B /* Preview Content */,
@@ -141,6 +144,7 @@
 			files = (
 				1E2A99BD294BB05D0006FA3B /* ContentView.swift in Sources */,
 				1E2A99BB294BB05D0006FA3B /* DripDropApp.swift in Sources */,
+				1E2A99CA294BB0940006FA3B /* StorageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
