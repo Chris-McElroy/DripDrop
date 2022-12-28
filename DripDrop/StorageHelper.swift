@@ -7,13 +7,21 @@
 
 import Foundation
 
-class Storage {
+class Storage {	
 	static func dictionary(_ key: Key) -> [String: Any]? {
 		UserDefaults.standard.dictionary(forKey: key.rawValue)
 	}
 	
+	static func array(_ key: Key) -> [Any]? {
+		UserDefaults.standard.array(forKey: key.rawValue)
+	}
+	
 	static func int(_ key: Key) -> Int {
 		UserDefaults.standard.integer(forKey: key.rawValue)
+	}
+	
+	static func double(_ key: Key) -> Double {
+		UserDefaults.standard.double(forKey: key.rawValue)
 	}
 	
 	static func string(_ key: Key) -> String? {
@@ -26,7 +34,8 @@ class Storage {
 }
 
 enum Key: String {
-	case waterArray = "waterArray"
+	case logHistory = "logHistory"
+	case goalHistory = "goalHistory"
 	case defaultSize = "defaultSize"
 	case dayStart = "dayStart"
 	case dayEnd = "dayEnd"
