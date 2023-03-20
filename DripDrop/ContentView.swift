@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+	@Environment(\.scenePhase) var scenePhase
+	
 	@State var logHistory: [String: Double] = Storage.dictionary(.logHistory) as? [String: Double] ?? [:]
 	@State var goalHistory: [String: Double] = Storage.dictionary(.goalHistory) as? [String: Double] ?? [:]
 	@State var defaultSize: Double = Storage.double(.defaultSize)
@@ -101,10 +103,16 @@ struct ContentView: View {
 		.onAppear {
 			updateLogAndGoal()
 		}
+		.onChange(of: scenePhase, perform: { newPhase in
+			if newPhase == .active {
+				updateLogAndGoal()
+			}
+		})
 		.foregroundColor(.white)
     }
 	
 	func updateLogAndGoal() {
+		print("hi")
 		if let currentLog = logHistory[String(Date.int)] {
 			loggedToday = currentLog
 		} else {
